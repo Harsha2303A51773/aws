@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>National Technical Symposium 2025 | Dept. of CSE</title>
+  <meta name="description" content="Official website for the National Technical Symposium 2025 – schedule, tracks, speakers, registration, venue, and FAQs." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' x2='1' y1='0' y2='1'%3E%3Cstop stop-color='%230ea5e9'/%3E%3Cstop offset='1' stop-color='%237a5af8'/%3E%3C/linearGradient%3E%3C/defs%3E%3Ccircle cx='50' cy='50' r='48' fill='url(%23g)'/%3E%3Ctext x='50' y='58' text-anchor='middle' font-size='46' fill='white' font-family='Inter' font-weight='800'%3ENT%3C/text%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="logo" href="#home" aria-label="Symposium Home">NTS <span>2025</span></a>
+      <nav class="menu" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#tracks">Tracks</a>
+        <a href="#cfp">Call for Papers</a>
+        <a href="#schedule">Schedule</a>
+        <a href="#speakers">Speakers</a>
+        <a href="#register" class="btn btn-sm">Register</a>
+      </nav>
+      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+    </div>
+  </header>
+  <section id="home" class="hero">
+    <div class="container grid2">
+      <div class="hero-copy">
+        <h1>National Technical Symposium <span class="accent">2025</span></h1>
+        <p class="lead">A convergence of students, researchers, industry experts, and innovators — hosted by the Department of Computer Science & Engineering.</p>
+        <ul class="hero-meta">
+          <li><strong>Dates:</strong> 13–14 November 2025</li>
+          <li><strong>Venue:</strong> SR University, Warangal, Telangana</li>
+        </ul>
+        <div class="actions">
+          <a class="btn" href="#register">Register Now</a>
+          <a class="btn ghost" href="#cfp">Submit Paper</a>
+        </div>
+      </div>
+      <div class="hero-art card">
+        <img src="https://images.unsplash.com/photo-1525182008055-f88b95ff7980?q=80&w=1200&auto=format&fit=crop" alt="Conference audience and stage lighting"/>
+      </div>
+    </div>
+  </section>
+  <footer class="site-footer">
+    <div class="container footer">
+      <p>© 2025 Department of CSE, SR University · National Technical Symposium</p>
+      <a href="#home" class="to-top" aria-label="Back to top">↑</a>
+    </div>
+  </footer>
+  <script>
+    const btn = document.querySelector('.menu-toggle');
+    const menu = document.querySelector('.menu');
+    btn.addEventListener('click', () => {
+      const open = menu.classList.toggle('open');
+      btn.setAttribute('aria-expanded', open);
+    });
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click', e=>{
+        const id = a.getAttribute('href');
+        if(id.length>1){ e.preventDefault(); document.querySelector(id).scrollIntoView({behavior:'smooth'}); }
+        menu.classList.remove('open');
+      });
+    });
+  </script>
+</body>
+</html>
