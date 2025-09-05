@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>National Technical Symposium 2025</title>
+  <meta name="description" content="National-level technical symposium — students, researchers, industry experts." />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">TechSympo <span class="year">2025</span></div>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#schedule">Schedule</a>
+        <a href="#speakers">Speakers</a>
+        <a href="#register">Register</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="burger" aria-label="menu" onclick="document.body.classList.toggle('nav-open')">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero" class="hero">
+      <div class="container hero-inner">
+        <h1>National Technical Symposium</h1>
+        <p class="lead">Connect • Learn • Innovate — 3 days of talks, workshops & networking.</p>
+        <div class="hero-meta">
+          <span><strong>Date:</strong> October 10–12, 2025</span>
+          <span><strong>Venue:</strong> Dept. of Computer Science, Example University</span>
+        </div>
+        <div class="hero-cta">
+          <a class="btn" href="#register">Register Now</a>
+          <a class="btn alt" href="#schedule">View Schedule</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section about">
+      <div class="container">
+        <h2>About the Symposium</h2>
+        <p>
+          The National Technical Symposium brings together students, researchers and industry experts from across India to share research,
+          innovations, and practical solutions. We host keynote talks, paper presentations, workshops and project demos.
+        </p>
+        <ul class="highlights">
+          <li>Keynotes from industry leaders</li>
+          <li>Paper presentations & workshops</li>
+          <li>Student project expo & hackathon</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="schedule" class="section schedule">
+      <div class="container">
+        <h2>Schedule (overview)</h2>
+        <div class="grid schedule-grid">
+          <article class="card">
+            <h3>Day 1 — Oct 10</h3>
+            <ul>
+              <li>09:00 — Registration & Breakfast</li>
+              <li>10:00 — Inaugural & Keynote</li>
+              <li>14:00 — Paper Sessions</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Day 2 — Oct 11</h3>
+            <ul>
+              <li>09:30 — Workshops</li>
+              <li>13:00 — Panel Discussion</li>
+              <li>16:00 — Poster Session</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Day 3 — Oct 12</h3>
+            <ul>
+              <li>09:30 — Hackathon Finals</li>
+              <li>14:00 — Award Ceremony</li>
+              <li>16:00 — Closing Remarks</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="speakers" class="section speakers">
+      <div class="container">
+        <h2>Speakers</h2>
+        <div class="grid speaker-grid">
+          <figure class="speaker-card">
+            <img src="images/speaker1.jpg" alt="Dr. A. Researcher">
+            <figcaption>
+              <strong>Dr. A. Researcher</strong>
+              <span>AI & Robotics — Institute X</span>
+            </figcaption>
+          </figure>
+          <figure class="speaker-card">
+            <img src="images/speaker2.jpg" alt="Ms. B. Engineer">
+            <figcaption>
+              <strong>Ms. B. Engineer</strong>
+              <span>CTO — Startup Y</span>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="register" class="section register">
+      <div class="container">
+        <h2>Registration</h2>
+        <p>Student, Academia and Industry tickets available. Early-bird discounts until Sept 25, 2025.</p>
+        <form class="reg-form" action="mailto:organizer@example.edu" method="post" enctype="text/plain">
+          <div class="form-row">
+            <input type="text" name="name" placeholder="Full name" required>
+            <input type="email" name="email" placeholder="Email address" required>
+          </div>
+          <div class="form-row">
+            <select name="category" required>
+              <option value="">Select category</option>
+              <option>Student</option>
+              <option>Faculty</option>
+              <option>Industry</option>
+            </select>
+            <input type="text" name="institution" placeholder="Institution / Company">
+          </div>
+          <textarea name="notes" placeholder="Any dietary / accessibility needs"></textarea>
+          <div class="form-actions">
+            <button class="btn" type="submit">Submit Registration</button>
+            <small class="note">(Or email registration details to <a href="mailto:organizer@example.edu">organizer@example.edu</a>)</small>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section id="sponsors" class="section sponsors">
+      <div class="container">
+        <h2>Sponsors</h2>
+        <p>We thank our sponsors for supporting the symposium.</p>
+        <div class="sponsor-logos">
+          <img src="images/sponsor1.png" alt="Sponsor 1" />
+          <img src="images/sponsor2.png" alt="Sponsor 2" />
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="container">
+        <h2>Contact</h2>
+        <p>For queries: <strong>symposium@example.edu</strong> or call +91-98765-43210</p>
+        <address>
+          Department of Computer Science<br/>
+          Example University, City, State
+        </address>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2025 Example University — National Technical Symposium</p>
+      <p class="small">Follow us on <a href="#">Twitter</a> • <a href="#">LinkedIn</a></p>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelectorAll('.nav a').forEach(a => a.addEventListener('click', () => {
+      document.body.classList.remove('nav-open');
+    }));
+  </script>
+</body>
+</html>
